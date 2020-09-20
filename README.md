@@ -7,4 +7,8 @@ Prueba realizada para extraccion de datos desde API's tratamiento de datos con p
 Se agrega documento requirements.txt con librerias instaladas en entorno de desarrollo
 Se adiciona Notebook -zinobe.ipynb-
 
+Documentos para carga de resultados
+/data.json
+/db/results.sqlite
+
 lanzamiento de aplicacion  ->>  python main.py
