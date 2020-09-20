@@ -33,6 +33,7 @@ regions = response.text
 regions = json.loads(regions)
 df_regions = pd.DataFrame(regions)
 df_unique_regions = df_regions['region'].unique()
+#Comprehension list eliminacion de vacios
 df_unique_regions = [i for i in df_unique_regions if i != '']
 print(str(type(df_unique_regions)))
 print(df_unique_regions)
@@ -51,6 +52,7 @@ df_countries_region = df_countries_region[['name','region','languages']]
 d_countries_region = dict(df_countries_region) 
 d_countries_region = dict(d_countries_region['languages'])
 print(str(d_countries_region) + " - "+str(type(d_countries_region)))
+#Comprehension list para extraer valor 'iso639_1' de diccionarios internos
 d_languages = [v[0]['iso639_1'] for k,v in d_countries_region.items()]
 df_countries_region['languages'] = d_languages
 df_countries_region
