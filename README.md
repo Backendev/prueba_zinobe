@@ -1,4 +1,4 @@
-# -prueba tecnica Backend Python para ZINOBE-
+# -Prueba tecnica Backend Python para ZINOBE-
 Prueba Tecnica Desarrollador Backend Python
 
 
