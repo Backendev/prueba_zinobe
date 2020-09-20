@@ -98,7 +98,7 @@ pd_result_reorden['max_time'] = pd_result_reorden[["time_unique_regions", "time_
 #Exportaciones
 #Json
 dir_json = dir_app.format("data.json")
-pd_result_reorden.to_json(dir_json)
+pd_result_reorden.to_json(dir_json,orient='records')
 print(str(dir_json))
 #Sqlite
 con = sqlite3.connect(dir_app.format("db\\results.sqlite"))
